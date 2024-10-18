@@ -1,9 +1,16 @@
+import Header from "@/components/Header"
+import TypoGraphy from "@/components/Typography"
 
-type Props = {}
+const HomePage = () => {
 
-const HomePage = (props: Props) => {
+  const description = "There's a new Chrome release every four weeks, making it easy to have the newest features and a faster, safer web browser. There's a new Chrome release every four weeks, making it easy to have the newest features and a faster, safer web browser."
   return (
-    <div>HomePage</div>
+    <main>
+      <Header title="Astral Grid" />
+      <section className="max-w-md">
+        <TypoGraphy description={description} />
+      </section>
+    </main>
   )
 }
 

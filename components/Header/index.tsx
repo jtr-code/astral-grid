@@ -1,12 +1,12 @@
 import React from "react";
 
 type HeaderProps = {
-  title?: string;
+  title: string;
 };
 
-const Header = ({ title = "Astral Grid" }: HeaderProps) => {
+const Header = ({ title }: HeaderProps) => {
   return (
-    <article>
+    <article className="px-4">
       <h1 className="text-clamp text-pretty text-center leading-none">
         {title}
       </h1>
