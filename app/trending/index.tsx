@@ -18,7 +18,7 @@ const TrendingPage = () => {
     return (
         <div className='flex flex-col'>
             <div className='flex justify-end items-center'>
-                <section className='border-none bg-green-bg px-6 py-4 rounded-full flex justify-between min-w-[25%]'>
+                <section className='border-none bg-green-bg px-6 py-4 rounded-full flex justify-between min-w-[100%] md:min-w-[35%]'>
                     {filterButtons?.map((button) => (
                         <button key={button.id} className='font-modernistRegular text-lg hover:underline'>{button.buttonName}</button>
                     ))}
