@@ -2,14 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+  --text-lg: clamp(1.5rem, -1.0217rem + 12.6087vw, 8.75rem);
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  @apply text-sm;
+  @apply bg-white;
+  @apply dark:bg-black;
+}
+
+.text-clamp {
+  font-size: var(--text-lg);
+  line-height: inital;
 }
