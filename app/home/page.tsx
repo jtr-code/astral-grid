@@ -1,5 +1,6 @@
 import Header from "@/components/Header"
 import TypoGraphy from "@/components/Typography"
+import TrendingPage from "../trending"
 
 const HomePage = () => {
 
@@ -8,8 +9,9 @@ const HomePage = () => {
     <main>
       <Header title="Astral Grid" />
       <section className="max-w-md">
-        <TypoGraphy description={description} />
+            <TypoGraphy description={description} />
       </section>
+      <TrendingPage />
     </main>
   )
 }
