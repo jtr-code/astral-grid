@@ -77,7 +77,7 @@ const RecentCards: React.FC<RecentCardsProps> = ({ data }) => {
                             />
                         </div>
                         <h4 className="font-modernistRegular text-base">{title}</h4>
-                        <section className="flex items-center justify-between ">
+                        <section className="flex items-center justify-between mr-6">
                             <TypoGraphy description={description} />
                             <MoveRight size={30} />
                         </section>
