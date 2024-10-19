@@ -16,4 +16,4 @@ const Header = ({ title, isSmallText = false }: HeaderProps) => {
 };
 
 export default Header;
-8;
+
