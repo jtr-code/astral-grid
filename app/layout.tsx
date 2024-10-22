@@ -25,8 +25,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${modernWarfare.variable} ${modernistRegular.variable} font-sans antialiased `}>
-        <LayoutWrapper >{children}</LayoutWrapper>
+      <body
+        className={`${modernWarfare.variable} ${modernistRegular.variable} font-sans antialiased`}
+      >
+        <LayoutWrapper>{children}</LayoutWrapper>
       </body>
     </html>
   );
