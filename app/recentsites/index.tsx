@@ -1,4 +1,4 @@
-import Header from "@/components/Header";
+
 import TypoGraphy from "@/components/Typography";
 import Image from "next/image";
 import { MoveRight } from "lucide-react";
