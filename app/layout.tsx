@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import LayoutWrapper from "./LayoutWrapper";
+import Navbar from "@/components/Navbar";
 
 const modernWarfare = localFont({
   src: "./fonts/ModernWarfare.ttf",
@@ -28,7 +29,10 @@ export default function RootLayout({
       <body
         className={`${modernWarfare.variable} ${modernistRegular.variable} font-sans antialiased`}
       >
-        <LayoutWrapper>{children}</LayoutWrapper>
+        <LayoutWrapper>
+          <Navbar />
+          {children}
+        </LayoutWrapper>
       </body>
     </html>
   );
