@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --text-lg: clamp(1.5rem, -1.0217rem + 12.6087vw, 8.75rem);
+  --text-lg: clamp(2.25rem, 1.0999999999999999rem + 5.75vw, 8rem);
 }
 
 *,
