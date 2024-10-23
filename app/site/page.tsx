@@ -1,9 +1,13 @@
 "use client"
 
 import React, { useState } from 'react';
-import Header from "@/components/Header";
+import Header from '@/components/Header';
 
-const filterButtons = [
+interface buttonType {
+    id: number;
+    buttonName: string;
+}
+const filterButtons: buttonType[] = [
     {
         id: 1,
         buttonName: "Portfolio",
@@ -19,21 +23,27 @@ const filterButtons = [
 ];
 
 const SiteLayout = () => {
-    const [activeButton, setActiveButton] = useState(1);
+    const [activeButton, setActiveButton] = useState<number>(1);
+    const [siteHeader, setSiteHeader] = useState<string>("Portfolio")
+
+    const handleOnClick = (button: buttonType) => {
+        setActiveButton(button.id);
+        setSiteHeader(button.buttonName);
+    }
 
     return (
-        <main className="pt-24 flex items-center justify-between">
-            <section>
-                <Header title="PORTFOLIO" />
+        <main className="pt-24 flex items-end justify-between flex-wrap">
+            <section >
+                <Header title={siteHeader} />
             </section>
-            <section className="relative p-1 rounded-full bg-neutral-900">
-                <div className="flex relative z-10">
+            <section className="relative mb-4 rounded-full bg-[#272727]">
+                <div className="flex relative z-10 ">
                     {filterButtons.map((button) => (
                         <button
                             key={button.id}
-                            onClick={() => setActiveButton(button.id)}
+                            onClick={() => handleOnClick(button)}
                             className={`
-                                relative px-6 py-2 rounded-full text-lg
+                                relative px-4 py-2 md:px-6 md:py-2 rounded-full text-lg
                                 font-modernistRegular transition-colors duration-200
                                 ${activeButton === button.id ? 'text-black' : 'text-white hover:text-neutral-300'}
                             `}

@@ -47,7 +47,6 @@ const RecentSites = () => {
   return (
     <>
       <div className="flex items-center justify-end"></div>
-      <Header title="Explore Our Sites" isSmallText />
       <RecentCards data={recentSitesData} />
     </>
   );
