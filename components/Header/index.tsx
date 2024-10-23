@@ -9,7 +9,7 @@ const Header = ({ title, isSmallText = false }: HeaderProps) => {
   return (
     <article className="py-4">
       <h1
-        className={`${isSmallText ? "text-4xl font-normal" : "text-clamp"} text-pretty leading-none`}
+        className={`${isSmallText ? "text-4xl font-normal  tracking-tight" : "text-clamp tracking-tighter"} text-pretty leading-none`}
       >
         {title}
       </h1>
