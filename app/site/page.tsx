@@ -24,7 +24,7 @@ const filterButtons: buttonType[] = [
 
 const SiteLayout = () => {
   const [activeButton, setActiveButton] = useState<number>(1);
-  const [siteHeader, setSiteHeader] = useState<string>("Design agency");
+  const [siteHeader, setSiteHeader] = useState<string>("Portfolio");
 
   const handleOnClick = (button: buttonType) => {
     setActiveButton(button.id);
@@ -32,7 +32,7 @@ const SiteLayout = () => {
   };
 
   return (
-    <main className="mb-4 sm:flex flex-wrap items-end justify-between border-b border-[#4C4C4C] md:pt-44 pt-20">
+    <main className="mb-4 flex flex-wrap items-end justify-between border-b border-[#4C4C4C] md:min-h-[27.5rem] min-h-[20rem]">
       <section>
         <Header title={siteHeader} />
       </section>
