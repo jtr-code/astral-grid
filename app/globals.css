@@ -17,8 +17,8 @@ body,
 #root {
   height: 100%;
   width: 100%;
-  @apply text-sm;
-  @apply bg-black;
+  @apply text-base;
+  @apply bg-dark-bg;
   @apply text-white;
 }
 

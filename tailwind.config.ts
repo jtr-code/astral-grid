@@ -15,7 +15,7 @@ const config: Config = {
       },
       colors: {
         white: "#ffffff",
-        "dark-bg": "#000000",
+        "dark-bg": "#121213",
         gray: "#919191",
         "green-bg": "#ACFF12",
       },
