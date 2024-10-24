@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import LayoutWrapper from "./LayoutWrapper";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const antonRegular = localFont({
   src: "./fonts/AntonRegular.ttf",
@@ -32,6 +33,7 @@ export default function RootLayout({
         <LayoutWrapper>
           <Navbar />
           {children}
+          <Footer />
         </LayoutWrapper>
       </body>
     </html>
