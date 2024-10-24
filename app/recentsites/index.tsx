@@ -40,6 +40,30 @@ const recentSitesData: RecentSiteProps[] = [
     title: "Mountains",
     description: "Feel the majesty of towering peaks and valleys",
   },
+  {
+    id: 6,
+    image: "/image3.jpg",
+    title: "Forest",
+    description: "Explore the tranquility of nature's green canopy",
+  },
+  {
+    id: 7,
+    image: "/image2.jpg",
+    title: "Desert",
+    description: "Experience the vastness and solitude of the sands",
+  },
+  {
+    id: 8,
+    image: "/image1.jpg",
+    title: "Mountains",
+    description: "Feel the majesty of towering peaks and valleys",
+  },
+  {
+    id: 9,
+    image: "/image2.jpg",
+    title: "Mountains",
+    description: "Feel the majesty of towering peaks and valleys",
+  },
 ];
 
 const RecentSites = () => {
@@ -59,7 +83,7 @@ interface RecentCardsProps {
 
 const RecentCards: React.FC<RecentCardsProps> = ({ data }) => {
   return (
-    <main className="grid gap-4 md:grid-cols-2 md:gap-6 lg:grid-cols-3">
+    <main className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
       {data.map(({ id, title, image, description }) => (
         <div key={id}>
           <div className="relative mb-4 aspect-[16/9] w-full">
