@@ -32,7 +32,7 @@ const SiteLayout = () => {
   };
 
   return (
-    <main className="mb-4 flex flex-wrap items-end justify-between border-b border-[#4C4C4C] pt-44">
+    <main className="mb-4 flex flex-wrap items-end justify-between border-b border-[#4C4C4C] md:pt-44 pt-20">
       <section>
         <Header title={siteHeader} />
       </section>
