@@ -32,11 +32,11 @@ const SiteLayout = () => {
   };
 
   return (
-    <main className="mb-4 flex flex-wrap items-end justify-between border-b border-[#4C4C4C] md:min-h-[27.5rem] min-h-[20rem]">
+    <main className="mb-4 flex min-h-[20rem] flex-wrap items-end justify-between border-b border-[#4C4C4C] md:min-h-[27.5rem]">
       <section>
         <Header title={siteHeader} />
       </section>
-      <section className="relative mb-4 rounded-full bg-[#272727] w-fit">
+      <section className="relative mb-4 w-fit rounded-full bg-[#272727]">
         <div className="relative z-10 flex">
           {filterButtons.map((button) => (
             <button
