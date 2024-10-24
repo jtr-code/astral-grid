@@ -4,9 +4,9 @@ import "./globals.css";
 import LayoutWrapper from "./LayoutWrapper";
 import Navbar from "@/components/Navbar";
 
-const modernWarfare = localFont({
-  src: "./fonts/ModernWarfare.ttf",
-  variable: "--font-modern-warfare",
+const antonRegular = localFont({
+  src: "./fonts/AntonRegular.ttf",
+  variable: "--font-anton-regular",
   weight: "600",
 });
 const modernistRegular = localFont({
@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${modernWarfare.variable} ${modernistRegular.variable} font-sans antialiased`}
+        className={`${antonRegular.variable} ${modernistRegular.variable} font-sans antialiased`}
       >
         <LayoutWrapper>
           <Navbar />

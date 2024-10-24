@@ -10,7 +10,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["var(--font-modern-warfare)"],
+        sans: ["var(--font-anton-regular)"],
         modernistRegular: ["var(--font-modernist-regular)"],
       },
       colors: {
