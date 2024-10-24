@@ -2,7 +2,7 @@ import Header from "@/components/Header";
 
 const Navbar = () => {
   return (
-    <div className="flex items-center">
+    <div className="flex items-center border-b border-[#4C4C4C]">
       <section className="w-full">
         <Header title="Astral Grid" isSmallText />
       </section>
