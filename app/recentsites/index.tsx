@@ -1,6 +1,6 @@
 import TypoGraphy from "@/components/Typography";
 import Image from "next/image";
-import { MoveRight } from "lucide-react";
+import backArrow from "../../public/backArrow.svg"
 
 interface RecentSiteProps {
   id: number;
@@ -99,7 +99,13 @@ const RecentCards: React.FC<RecentCardsProps> = ({ data }) => {
           <h4 className="font-modernistRegular text-base">{title}</h4>
           <section className="items-center justify-between sm:mr-6 sm:flex">
             <TypoGraphy description={description} />
-            <MoveRight size={30} className="cursor-pointer" />
+            <span className="cursor-pointer">
+              <Image
+                src={backArrow}
+                alt="back arrow"
+                quality={100}
+              />
+            </span>
           </section>
         </div>
       ))}
