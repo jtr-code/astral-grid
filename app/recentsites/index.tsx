@@ -1,4 +1,3 @@
-import TypoGraphy from "@/components/Typography";
 import Image from "next/image";
 import backArrow from "../../public/backArrow.svg"
 
@@ -83,8 +82,8 @@ interface RecentCardsProps {
 
 const RecentCards: React.FC<RecentCardsProps> = ({ data }) => {
   return (
-    <main className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-      {data.map(({ id, title, image, description }) => (
+    <main className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 py-4">
+      {data.map(({ id, title, image }) => (
         <div key={id}>
           <div className="relative mb-4 aspect-[16/9] w-full">
             <Image
@@ -96,9 +95,8 @@ const RecentCards: React.FC<RecentCardsProps> = ({ data }) => {
               quality={100}
             />
           </div>
-          <h4 className="font-modernistRegular text-base">{title}</h4>
-          <section className="items-center justify-between sm:mr-6 sm:flex">
-            <TypoGraphy description={description} />
+          <div className="flex items-center gap-2">
+            <h4 className="font-modernistRegular text-xl">{title}</h4>
             <span className="cursor-pointer">
               <Image
                 src={backArrow}
@@ -106,7 +104,7 @@ const RecentCards: React.FC<RecentCardsProps> = ({ data }) => {
                 quality={100}
               />
             </span>
-          </section>
+          </div>
         </div>
       ))}
     </main>
